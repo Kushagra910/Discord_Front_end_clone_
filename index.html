@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discord</title>
     <link rel="stylesheet" href="./main.css" />
-     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="relative w-full overflow-x-hidden">
       <!--Nav+herosection-->
       <section
-        class="relative h-[800px] md:h-[650px] mb-32 bg-[#404EED] overflow-hidden"
+        class="relative h-[800px] md:h-[650px] mb-32 bg-[#404EED] font-ggSans overflow-hidden"
       >
         <img
           src="./images/Image0.svg"
           height="100%"
           alt=""
-          class="absolute bottom-0 left-9 lg:left-0 w-full right-12 bg-contain -ml-[130px] "
+          class="absolute bottom-0 left-9 lg:left-0 w-full right-12 bg-contain -ml-[130px]"
         />
         <img
           src="./images/Image1.svg"
@@ -33,13 +32,13 @@
           alt=""
           width="600px"
           height="352px"
-          class="absolute md:hidden sm:w-[689px] lg:block left-1/3 md:left-0 bottom-0 -ml-[260px]"
+          class="absolute md:hidden sm:w-[689px] lg:block left-[50%] md:left-0 bottom-0 -ml-[260px]"
         />
         <nav
-          class="w-11/12 mx-auto lg:w-9/12 flex flex-row justify-between items-center mt-7"
+          class="w-11/12 mx-auto lg:w-9/12 flex flex-row justify-between items-center mt-7 font-ggSans"
         >
           <!--discord img-->
-          <div>
+          <div class="cursor-pointer">
             <img src="./images/logo.svg" alt="" />
           </div>
           <!--hyperlinks-->
@@ -72,25 +71,31 @@
           <div>
             <a href="#">
               <button
-                class="bg-white py-[7px] px-[16px] text-[0.9rem] rounded-2xl font-normal hover:drop-shadow-2xl hover:text-blue-600 transition-all duration-200"
+                class="bg-[#fff] hidden sm:block font-[500] text-[#2c2f33] py-[7px] px-[16px] text-[0.9rem] rounded-2xl  hover:drop-shadow-2xl hover:text-blue-600 transition-all duration-200"
               >
                 Open Discord
               </button>
             </a>
           </div>
+          <!-- Humbarget Option -->
+          <div class="xl:hidden block">
+            <i class="fa-solid fa-bars text-[23px] text-[#fff]"></i>
+          </div>
         </nav>
         <!--hero section-->
         <div
-          class=" lg:w-[800px] h-[444px] lg:mx-auto flex flex-col justify-center items-center relative"
+          class="lg:w-[800px] h-[444px] lg:mx-auto flex flex-col justify-center items-center relative"
         >
           <!--Heading-->
           <h1
-            class="font-extrabold relative text-[30px]  sm:text-[50px] text-white py-7 leading-[3rem]"
+            class="font-[800] font-['GintoNord'] relative text-[30px] sm:text-[50px] text-white py-7 leading-[3rem]"
           >
             IMAGINE A PLACE...
           </h1>
           <!--Content-->
-          <p class=" ml-5 sm:ml-0 text-[1rem] sm:text-[1.2rem] lg:text-center text-white pb-10">
+          <p
+            class="font-[400] font-[ggSans] ml-5 sm:ml-0 text-[1rem] sm:text-[1.2rem] text-left lg:text-center text-white pb-10"
+          >
             ...where you can belong to a school club, a gaming group, or a
             worldwide art community. Where just you and a handful of friends can
             spend time together. A place that makes it easy to talk every day
@@ -99,8 +104,9 @@
           <!--button-groups-->
           <div class="z-10 flex flex-col gap-5 sm:flex-row">
             <button
-              class="bg-white py-[16px] px-[32px] text-[1rem] rounded-[28px] font-semibold mr-[24px] hover:drop-shadow-2xl hover:text-blue-700"
+              class="bg-white py-[16px] px-[50px] text-[1rem] rounded-[28px] font-semibold mr-[24px] hover:drop-shadow-2xl hover:text-blue-700"
             >
+            <i class="fa-solid fa-download mr-2"></i>
               Download for Windows
             </button>
             <button
@@ -114,23 +120,23 @@
 
       <!--feature-section1-->
       <section
-        class="w-full h-[800px] md:h-[500px] mx-auto mb-32 flex flex-col md:flex-row justify-center gap-5 relative"
+        class=" w-full h-[550px] md:h-[500px] mx-auto mb-32 flex flex-col md:flex-row justify-center gap-5 relative"
       >
         <!--left-block-->
-        <div class="sm:w-[660px] h-full sm:ml-40 mt-16 relative">
+        <div class="w-[350px] sm:w-[660px] h-full sm:ml-40 mt-16 relative order-1">
           <img src="./images/section1Image.svg" alt="" />
         </div>
         <!--right-block-->
-        <div class="max-w-[350px] mx-auto flex flex-col gap-8 relative">
+        <div class="max-w-[350px] mx-auto flex flex-col sm:gap-8 relative sm:order-2">
           <!--heading-->
           <div class="pt-20 relative">
-            <h2 class="font-extrabold text-[2.5rem] leading-[3.5rem]">
+            <h2 class="font-[700] font-['ggSans'] text-[30px] sm:text-[2.5rem] leading-[2.3rem] sm:leading-[2.9rem]">
               Create an invite-only place where you belong
             </h2>
           </div>
           <!--content-->
           <div class="relative text-[1.2rem] text-gray-700">
-            <p>
+            <p class="font-[ggSans]"> 
               Discord servers are organized into topic-based channels where you
               can collaborate, share, and just talk about your day without
               clogging up a group chat.
@@ -140,7 +146,7 @@
       </section>
       <!--feature-section2-->
       <section
-        class="w-full h-[800px] sm:h-[550px] mx-auto flex flex-col sm:flex-row mb-32 justify-center relative bg-gray-100"
+        class="w-full h-[750px] sm:h-[550px] mx-auto flex flex-col sm:flex-row mb-32 justify-center relative bg-gray-100"
       >
         <!--left-block-->
         <div
@@ -148,12 +154,12 @@
         >
           <!--heading-->
           <div class="pt-20">
-            <h2 class="font-extrabold text-[2.5rem] leading-[3.5rem]">
+            <h2 class="font-[700] text-[2.5rem] leading-[3.5rem] font-['ggSans']">
               Where hanging out is easy
             </h2>
           </div>
           <!--content-->
-          <div class="relative text-[1.2rem] text-gray-700">
+          <div class="relative text-[1.2rem] text-gray-700 font-['ggSans']">
             <p>
               Grab a seat in a voice channel when you’re free. Friends in your
               server can see you’re around and instantly pop in to talk without
@@ -170,22 +176,22 @@
 
       <!--feature-section3-->
       <section
-        class="w-full h-[800px] sm:h-[500px] mx-auto flex flex-col sm:flex-row justify-center my-32 relative"
+        class="w-full h-[550px] sm:h-[500px] mx-auto flex flex-col sm:flex-row justify-center my-32 relative"
       >
         <!--left-block-->
-        <div class="sm:w-[660px] h-full sm:ml-40 mt-16">
+        <div class="sm:w-[660px] h-full sm:ml-40 sm:mt-16  mt-20 order-2">
           <img src="./images/section3Image.svg" alt="" />
         </div>
         <!--right-block-->
-        <div class="max-w-[350px] mx-auto flex flex-col gap-8">
+        <div class="max-w-[350px] mx-auto flex flex-col gap-8 sm:order-5">
           <!--heading-->
           <div class="pt-20">
-            <h2 class="font-extrabold text-[2.5rem] leading-[3.5rem]">
+            <h2 class="font-[700] font-['ggSans'] text-[1.8rem] sm:text-[2.5rem]  leading-[1.5rem] sm:leading-[3rem]">
               From few to a fandom
             </h2>
           </div>
           <!--content-->
-          <div class="relative text-[1.2rem] text-gray-700">
+          <div class="relative text-[1.2rem] text-gray-700 font-['ggSans']">
             <p>
               Get any community running with moderation tools and custom member
               access. Give members special powers, set up private channels, and
@@ -200,14 +206,14 @@
         <div class="w-full flex flex-col items-center justify-center relative">
           <!--heading-->
           <div class="ml-2">
-            <h2 class="font-extrabold text-[1.6rem] sm:text-[3rem] py-4 mt-20">
+            <h2 class="font-[800] font-['GintoNord'] text-[1.6rem] sm:text-[3rem] py-4 mt-20">
               RELIABLE TECH FOR STAYING CLOSE
             </h2>
           </div>
           <!--sub-heading-->
           <div class="relative">
             <p
-              class="text-center max-w-[900px] text-[1.1rem] text-slate-600 leading-[1.8rem]"
+              class="text-center max-w-[900px] text-[1.2rem] sm:text-[1.4rem] text-slate-600 leading-[1.8rem] font-['ggSans']"
             >
               Low-latency voice and video feels like you’re in the same room.
               Wave hello over video, watch friends stream their games, or gather
@@ -226,7 +232,7 @@
           </div>
           <!--base-heading-->
           <div class="relative w-[45rem] mt-9">
-            <h2 class="font-bold text-[1.8rem] ml-6 mb-10 text-center">
+            <h2 class="font-[700] font-['ggSans'] text-[1.8rem] ml-6 mb-10 text-center">
               Ready to start your journey?
             </h2>
             <div class="absolute z-10 bottom-9 right-16">
@@ -236,24 +242,32 @@
           <!--Button-->
           <div class="relative">
             <button
-              class="bg-[#404EED] px-[84px] py-3 sm:py-[16px] sm:px-[50px] font-bold text-white text-[1.06rem] sm:text-[1.2rem] rounded-[28px] mb-6 hover:drop-shadow-2xl hover:bg-opacity-80 transition-all duration-200"
+              class="bg-[#404EED] px-[84px] py-3 sm:py-[16px] hidden md:block sm:px-[50px] font-[500] font-['ggSans'] text-white text-[1.3rem] sm:text-[1.6rem] rounded-[28px] mb-6 hover:drop-shadow-2xl hover:bg-opacity-80 transition-all duration-200"
             >
+            <i class="fa-solid fa-download mr-2"></i>
               Download for Windows
             </button>
           </div>
+
+          <div
+          class="bg-[#404EED] md:hidden flex justify-center items-center mt-4
+           text-white text-[20px] font-[500] font-['ggSans'] px-[32px] py-[16px] rounded-3xl">
+          <i class="fa-solid fa-download mr-2"></i>
+          <p>Download from Google Play</p>
+        </div>
         </div>
       </section>
 
       <!--policy-section-->
-      <section class="w-full bg-slate-800 relative">
+      <section class="w-full bg-[#23272a] relative">
         <div
           class="w-11/12 gap-8 sm:w-9/12 h-[900px] sm:h-[35rem] mx-auto flex flex-col sm:flex-row pt-24 relative"
         >
           <!--part1-->
           <div class="relative">
-            <div class="flex flex-col gap-5 relative">
+            <div class="flex flex-col gap-5 relative text-white">
               <!--heading-->
-              <h2 class="font-extrabold text-[2.3rem] leading-8 text-blue-600">
+              <h2 class="font-[800] text-[1.9rem] sm:text-[2.3rem] text-[#5865f2] leading-8 font-['GintoNord']">
                 IMAGINE A PLACE
               </h2>
               <!--languages-->
@@ -268,13 +282,7 @@
               <!--logos-->
               <div class="flex gap-5 relative">
                 <a href="">
-                  <img
-                    src="/images/icons8-twitter-50.png"
-                    alt=""
-                    width="24px"
-                    height="24px"
-                    class=""
-                  />
+                  <i class="fa-brands fa-twitter w-[24px] h-[24px]"></i>
                 </a>
                 <a href="">
                   <svg
@@ -335,7 +343,7 @@
           </div>
           <!--part-2-->
           <div
-            class="sm:ml-10 w-full gap-10 sm:gap-0 grid grid-cols-2 sm:flex justify-between relative"
+            class="sm:ml-10 w-full gap-10 sm:gap-0 grid grid-cols-2 sm:flex justify-between relative font-['ggSans']"
           >
             <!--Product-->
             <div class="sm:ml-10 flex flex-col gap-2">
@@ -406,20 +414,27 @@
         </div>
 
         <div
-          class="w-11/12 sm:w-9/12 h-[1px] bg-blue-500 relative bottom-28 mx-auto"
+          class="w-11/12 sm:w-9/12 h-[1px] mt-6 bg-blue-500 relative bottom-28 mx-auto font-['ggSans']"
         ></div>
         <!--Last nav-->
         <div
           class="w-11/12 sm:w-9/12 relative mx-auto flex justify-between bottom-20"
         >
-          <img src="./images/logo.svg" alt="" />
+          <img src="./images/logo.svg" alt="" class="cursor-pointer" />
           <button
-            class="bg-blue-800 py-[7px] px-[16px] text-white text-[0.9rem] rounded-2xl font-normal hover:drop-shadow-2xl hover:bg-blue-500 transition-all duration-300"
+            class="bg-[#404EED] py-[7px] px-[16px] text-white text-[0.9rem] rounded-2xl font-normal hover:drop-shadow-2xl hover: transition-all duration-300 hidden xl:block"
           >
             Open Discord
           </button>
+          <div class="block xl:hidden">
+            <button
+              class="text-white bg-[#404EED] px-[16px] py-[7px] rounded-full leading-[24px] text-[14px] font-[500] hover:bg-[#5865f2]">
+              Download
+            </button>
+          </div>
         </div>
       </section>
     </div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
   </body>
 </html>
